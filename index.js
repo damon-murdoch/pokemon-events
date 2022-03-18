@@ -10,9 +10,6 @@ function populate_upcoming_body()
     // Create a new table row object
     let tr = document.createElement('tr');
 
-    // Ensure the row text is light
-    tr.classList = 'text-light';
-
     // Loop over the tournament properties
     for(let property of tournament)
     {
