@@ -5,7 +5,7 @@ let p_topcut = [
 
 // No Cut Points
 let p_nocut = [
-  20, 15, 20, 5, 1
+  20, 15, 10, 5, 1
 ];
 
 // Get values for tournament type
@@ -109,17 +109,17 @@ function populate_ladder_body()
           if (!(a[i] == b[i]))
           {
             // Return which one is bigger
-            return a[i] > b[i];
+            return a[i] < b[i];
           }
         }
 
         // If we made it here, pick alphabetically
-        return (a.toLowerCase() > b.toLowerCase());
+        return (a[0].toLowerCase() > b[0].toLowerCase());
       } 
       else // Different points count
       {
         // Return a more points than b
-        return a[5] > b[5];
+        return a[5] < b[5];
       }
     });
 
