@@ -52,7 +52,53 @@
 
         <!-- Page Content -->
         <div id="page-content" class="p-2">
-            Work in progress :)
+
+          <h2 class="text-center">
+            Previous Tournaments
+          </h2>
+  
+          <p>
+            The following table displays information on previous tournaments we have held.
+            For information on upcoming tournaments, please click 
+            <a class='link-light' href='index.html'>
+              here
+            </a>
+            .
+          </p>
+
+          <table class='table text-light table-striped'>
+            <thead class='thead'>
+              <tr>
+                <th>
+                  Date
+                </th>
+                <th>
+                  Venue
+                </th>
+                <th>
+                  Format
+                </th>
+                <th>
+                  Type
+                </th>
+                <th>
+                  Registration Opens
+                </th>
+                <th>
+                  Registration Closes
+                </th>
+                <th>
+                  Entry Fee
+                </th>
+                <th>
+                  Champion
+                </th>
+              </tr>
+            </thead>
+            <tbody id='events-body' class='tbody'>
+              <!-- Will be populated by index.js -->
+            </tbody>
+          </table>
         </div>
     </div>
     
@@ -70,16 +116,12 @@
     <script type='text/javascript' src='redist/bootstrap.min.js'>
     </script>
 
-    <!-- Ladder Data File -->
-    <script type='text/javascript' src='data/ladder.js'>
-    </script>
-
     <!-- Events Data File -->
     <script type='text/javascript' src='data/events.js'>
     </script>
 
     <!-- Main Js File -->
-    <script type='text/javascript' src='index.js'>
+    <script type='text/javascript' src='events.js'>
     </script>
   </div>
 </html>

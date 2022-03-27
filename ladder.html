@@ -52,7 +52,53 @@
 
         <!-- Page Content -->
         <div id="page-content" class="p-2">
-            Work in progress :)
+
+          <h2 class="text-center">
+            Season Points Ladder
+          </h2>
+  
+          <p>
+            The following table displays the tournament results and rankings for each 
+            player who has competed in a Buzzwole Sunday Tournaments event. If you would
+            like your name removed from the standings, please contact me and I will be able
+            to remove it for you. For more information on how the point structure works, 
+            please see the explanation 
+            <a class = 'link-light' href = 'index.html'>
+              here
+            </a>
+            .
+          </p>
+
+          <table class='table text-light table-striped'>
+            <thead class='thead'>
+              <tr>
+                <th>
+                  Rank
+                </th>
+                <th>
+                  Name
+                </th>
+                <th>
+                  1st Place Finishes
+                </th>
+                <th>
+                  2nd Place Finishes
+                </th>
+                <th>
+                  Top 4 Finishes
+                </th>
+                <th>
+                  Top 8 Finishes
+                </th>
+                <th>
+                  Total Points
+                </th>
+              </tr>
+            </thead>
+            <tbody id='ladder-body' class='tbody'>
+              <!-- Will be populated by index.js -->
+            </tbody>
+          </table>
         </div>
     </div>
     
@@ -74,12 +120,8 @@
     <script type='text/javascript' src='data/ladder.js'>
     </script>
 
-    <!-- Events Data File -->
-    <script type='text/javascript' src='data/events.js'>
-    </script>
-
     <!-- Main Js File -->
-    <script type='text/javascript' src='index.js'>
+    <script type='text/javascript' src='ladder.js'>
     </script>
   </div>
 </html>
